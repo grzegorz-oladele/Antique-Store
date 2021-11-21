@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.error {
+    color: red;
+}
+
+button {
+    background-color: grey;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    transition: transform .4s, background-color .4s;
+}
+
+button:hover {
+    transform: scale(.95);
+    background-color: dimgrey;
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 8px;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.antiquarian-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 10px;
+}
+
+.true-tab {
+    margin-top: 40px;
+}
+.false-tab {
+    margin-top: 120px;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-spacing: 1px;
+    text-align: center;
+    /*padding: 3px;*/
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+/*td {*/
+/*    transition: transform .4s;*/
+/*}*/
+
+/*td:hover {*/
+/*    transform: scale(.95);*/
+/*    background-color: grey;*/
+/*}*/
+
+thead {
+    background-color: grey;
+}
+
+tbody {
+    background-color: darkgrey;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
