@@ -2,23 +2,22 @@
 <%@include file="header.jsp" %>
 <div class="container">
     <section class="product-form">
+        <h3>Dodaj produkt</h3>
         <div class="antiquarian-form">
-            <h3>Dodaj produkt</h3>
-            <form:form modelAttribute="product" method="post">
-                <label for="name">Nazwa:</label>
-                <form:input path="name" placeholder="Podaj nazwę produktu"/>
-                <form:errors path="name" cssClass="error"/>
-                <label for="description">Opis:</label>
-                <form:input path="description" placeholder="Podaj opis"/>
-                <form:errors path="description" cssClass="error"/>
-                <label for="productCode">Kod produktu:</label>
-                <form:input path="productCode" placeholder="Podaj kod produktu"/>
-                <form:errors path="productCode" cssClass="error" element="div"/>
-                <label for="category">Wybierz kategorię</label>
-                <form:select path="category" itemValue="id" itemLabel="name" items="${categories}"/>
+            <form:form class="form" modelAttribute="product" method="post">
+            <div><label for="name">Nazwa: <form:input path="name" placeholder="Podaj nazwę produktu"/><form:errors
+                    path="name" cssClass="error"/></label></div>
+            <div><label for="description">Opis: <form:input path="description" placeholder="Podaj opis"/><form:errors
+                    path="description" cssClass="error"/></label></div>
+            <div><label for="productCode">Kod produktu: <form:input path="productCode"
+                                                                    placeholder="Podaj kod produktu"/><form:errors
+                    path="productCode" cssClass="error" element="div"/></label></div>
+            <div><label for="category">Wybierz kategorię: <form:select path="category" itemValue="id" itemLabel="name"
+                                                                       items="${categories}"/></label></div>
+            <div>
                 <button type="submit">Dodaj</button>
-            </form:form>
-        </div>
+                </form:form>
+            </div>
     </section>
     <section class="true-tab">
         <div class="table">

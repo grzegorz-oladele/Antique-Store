@@ -3,12 +3,14 @@
 <%@ include file="header.jsp" %>
 <main>
     <section class="form-login">
-        <form method="post">
-            <div><label> User Name : <input type="text" name="username"/> </label></div>
-            <div><label> Password: <input type="password" name="password"/> </label></div>
-            <div><input type="submit" value="Sign In"/></div>
-            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-        </form>
+        <div class="container">
+            <form class="form" method="post">
+                <div><label> User Name : <input type="text" name="username"/> </label></div>
+                <div class="margin-left"><label> Password: <input type="password" name="password"/> </label></div>
+                <div class="margin-left"><button type="submit">Zaloguj się</button></div>
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            </form>
+        </div>
     </section>
 </main>
-<%@include file="footer.jsp"%>
+<%@include file="footer.jsp" %>

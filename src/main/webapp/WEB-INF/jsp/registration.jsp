@@ -2,16 +2,18 @@
 <%@include file="header.jsp" %>
 <main>
     <section class="form-registration">
-        <form:form modelAttribute="user" method="post">
-            <label for="username">Nazwa użytkownika</label>
-            <form:input path="username" placeholder="Podaj nazwę użytkownika"/>
-            <label for="password">Podaj hasło</label>
-            <form:password path="password" placeholder="Podaj hasło"/>
-            <label for="password2">Powtórz hasło</label>
-            <input name="password2" id="password2" type="password" placeholder="Powtórz hasło">
-            <label for="email">Podaj email</label>
-            <form:input path="email" placeholder="Podaj email"/>
-            <button type="submit">Zarejestruj</button>
+        <form:form class="form" modelAttribute="user" method="post">
+            <div><label for="username">Nazwa użytkownika: <form:input path="username"
+                                                                      placeholder="Podaj nazwę użytkownika"/></label>
+            </div>
+            <div><label for="password">Podaj hasło: <form:password path="password" placeholder="Podaj hasło"/></label>
+            </div>
+            <div><label for="password2">Powtórz hasło: <input name="password2" id="password2" type="password"
+                                                              placeholder="Powtórz hasło"></label></div>
+            <div><label for="email">Podaj email: <form:input path="email" placeholder="Podaj email"/></label></div>
+            <div>
+                <button type="submit">Zarejestruj</button>
+            </div>
         </form:form>
     </section>
 </main>
